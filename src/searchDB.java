@@ -7,7 +7,7 @@ public class searchDB extends SQLConnector{
         int rowCounter2 = 1;
         boolean valueObtained = false;
         try{
-            setResultSet("*", "data");
+            setResultSet("*", "rating_database");
             while(rs.next()){
                 rs.absolute(rowCounter2);
                 if (((rs.getString(1)).equals(valueToSearch)) || ((String.valueOf(rs.getInt(2))).equals(valueToSearch)) || (rs.getString(3).equals(valueToSearch)) || (rs.getString(4).equals(valueToSearch)) || (rs.getString(5).equals(valueToSearch))){
