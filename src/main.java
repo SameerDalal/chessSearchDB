@@ -4,7 +4,7 @@ public class main {
 
     static SQLConnector sqlc = new SQLConnector();
     searchDB sdb = new searchDB();
-    addToDataBase atdb = new addToDataBase();
+
     public static void main(String[] args) {
         sqlc.connectToSQL();
         main m = new main();
